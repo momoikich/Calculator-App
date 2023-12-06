@@ -1,6 +1,3 @@
-Certainly! Here's a README template for your Tkinter-based calculator application:
-
-```markdown
 # Tkinter Calculator Application
 
 ## Description
