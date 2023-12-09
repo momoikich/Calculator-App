@@ -1,19 +1,13 @@
-# Tkinter Calculator Application
 
-## Description
+# Scientific Calculator
 
-The Tkinter Calculator Application is a basic calculator implemented using Python and the Tkinter library for creating a graphical user interface (GUI). This calculator allows users to perform basic arithmetic operations, including addition, subtraction, multiplication, and division.
-
-## Features
-
-- User-friendly interface with buttons for digits, arithmetic operators, and additional functions.
-- Real-time calculation and display of results.
-- Error handling for invalid mathematical expressions.
+This is a simple scientific calculator implemented in Python using the Tkinter GUI library. The calculator supports basic arithmetic operations, trigonometric functions, mathematical constants (π and e), logarithmic functions, square root, and exponentiation.
 
 ## Requirements
 
 - Python 3.10
 - tkinter 0.1.0
+- sympy 1.3.0
 
 ## Usage
 
@@ -28,35 +22,54 @@ The Tkinter Calculator Application is a basic calculator implemented using Pytho
    ```bash
    pip install tk==0.1.0
    ```
-
-3. **Run the Application:**
    ```bash
-   python Calculator_App.py
+   pip install sympy==1.3.0
    ```
 
-4. **Calculator Interface:**
-   - The calculator window displays an entry field at the top for input and result display.
-   - Buttons for digits (0-9), arithmetic operators (+, -, *, /), a decimal point (.), equals (=), and a clear button (C) are available.
 
-5. **Perform Calculations:**
-   - Click the buttons to input digits and operators.
-   - Click the "=" button to calculate the result.
-   - Click the "C" button to clear the entry field.
+## Features
 
-6. **Error Handling:**
-   - If an invalid mathematical expression is entered, the calculator will display an "Error" message.
+- **Basic Arithmetic Operations**: Addition, subtraction, multiplication, and division.
+- **Trigonometric Functions**: sin, cos, tan.
+- **Mathematical Constants**: π (pi) and e (E).
+- **Logarithmic Functions**: log (base 10) and ln (natural logarithm).
+- **Other Functions**: Square root (√), exponentiation (^2), and parentheses for complex expressions.
+- **Error Handling**: Proper error handling for invalid expressions.
 
-7. **Exit the Calculator:**
-   - Close the calculator window to exit the application.
+## How to Use
 
-## Notes
+1. Enter the mathematical expression using the provided buttons.
+2. Press the "=" button to evaluate the expression.
+3. Use the "C" button to clear the entry.
 
-- This calculator is a basic example and may not handle advanced mathematical expressions.
-- Feel free to customize and extend the functionality based on your requirements.
+## Additional Buttons
 
-## Acknowledgments
+- "sin": Inserts "sin(" into the entry.
+- "cos": Inserts "cos(" into the entry.
+- "tan": Inserts "tan(" into the entry.
+- "√": Inserts "sqrt(" for square root.
+- "π": Inserts the mathematical constant π.
+- "e": Inserts the mathematical constant e.
+- "log": Inserts "log(" into the entry.
+- "ln": Inserts "ln(" into the entry.
+- "^2": Inserts "^2" for exponentiation.
+- "(": Inserts "(" into the entry.
+- ")": Inserts ")" into the entry.
 
-This application is built using Python and the Tkinter library for GUI development.
+## Important Note
 
-Enjoy using the Tkinter Calculator!
- 
+- The calculator uses the `sympy` library to handle mathematical constants more accurately.
+
+## How to Run
+
+Ensure you have Python installed, and then run the following command:
+
+```bash
+python Calculator_App.py
+```
+
+Feel free to contribute or customize the calculator as needed!
+
+```
+
+Feel free to customize the README further based on your specific application and any additional details you'd like to include.

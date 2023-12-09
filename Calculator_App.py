@@ -1,9 +1,10 @@
 import tkinter as tk
+from sympy import *
 
 class CalculatorApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Basic Calculator")
+        self.root.title("Scientific Calculator")
 
         # Entry widget for displaying the result
         self.entry = tk.Entry(root, width=20, font=("Arial", 14), justify="right")
@@ -15,7 +16,8 @@ class CalculatorApp:
             '4', '5', '6', '*',
             '1', '2', '3', '-',
             '0', '.', '=', '+',
-            'C'
+            'C', 'sin', 'cos', 'tan',
+            '√', 'π', 'e', 'log', 'ln', '^2', '(', ')'
         ]
 
         self.row_val = 1
@@ -33,7 +35,8 @@ class CalculatorApp:
 
         if button_text == "=":
             try:
-                result = eval(current_text)
+                # Use sympy to handle mathematical constants more accurately
+                result = eval(current_text.replace("^2", "**2").replace("sqrt", "sqrt").replace("π", "pi").replace("e", "E"))
                 self.entry.delete(0, tk.END)
                 self.entry.insert(tk.END, str(result))
             except Exception as e:
