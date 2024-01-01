@@ -13,7 +13,7 @@ This is a simple scientific calculator implemented in Python using the Tkinter G
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/momikich/Calculator-App.git
+   git clone 
    cd Calculator-App
    ```
 
